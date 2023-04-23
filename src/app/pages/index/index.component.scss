@@ -1,5 +1,26 @@
 :host ::ng-deep {
 
+    .section-1 {
+        @extend .project-height;
+        background-image: url('/assets/media/images/image-section1.jpg');
+        background-size:cover;
+        filter: brightness(50%);
+        
+        background-position: center;
+    }
+
+
+
+
+    .mb-7 {
+        margin-bottom: 10rem;
+    }
+
+    p {
+        font-size: 2rem;
+        max-width: 75%;
+    }
+
     .p-menubar {
         height: 75px;
         border: none;
@@ -8,6 +29,10 @@
     }
     .project-height {
         height: calc(100vh - 75px) !important; 
+    }
+
+    .project-halfheight {
+        height: calc(50vh - 75px) !important;
     }
 
     .waitlistBtn {
@@ -38,6 +63,10 @@
             
     @media screen and (max-width: 768px)
     {
+        p {
+            font-size: 1rem;
+        }
+
         .waitlistBtn {
             font-size: 1rem !important;
         }
